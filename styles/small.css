@@ -1,0 +1,186 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: "Roboto", sans-serif;
+    background-color: beige;
+    
+}
+
+.wrapper {
+    max-width: 600px;
+    width: 100%;
+    margin: 0 auto;
+
+}
+
+:root{
+    --primary-color: #1A281F;
+    --secondary-color: #635255;
+    --accent1-color: #f0aebf;
+    --accent2-color: #C0E8F9;
+    --accent3-color: #B8D3D1;
+    --accent4-color: #000;
+}
+/*****************Header view *******************/
+header {
+    display: grid;
+    grid-template-columns: 24px auto 44px;
+    background-color: var(--accent1-color);
+    color: #aea9a9;
+    padding: 5px 0 5px 10px;
+    column-gap: 8px;
+    align-items: end;
+    border-bottom: 1px solid var(--accent1-color);
+    
+}
+header img {
+    display: block;
+    width: 100%;
+    height: auto;
+    
+}
+header span {
+    font-size: 1.2rem;
+    color: #000;
+}
+
+/************Hamburger Navigation *************/
+.hamburger {
+    background: none;
+    border: none;
+    color: var(--primary-color);
+    cursor: pointer;
+}
+
+.hamburger::after {
+    content: "\2630";
+
+}
+
+/************Navigation*************/
+nav {
+    display: none;
+}
+
+nav.show {
+    display: block;
+}
+nav ul {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    text-align: center;
+}
+ ul a {
+    text-decoration: none;
+    color: var(--accent4-color);
+ }
+ li a:hover {
+    color: var(--accent1-color);
+ }
+
+ li {
+    list-style: none;
+ }
+ /********Main Sections***************/
+ .bio-data {
+    display: flex;
+    flex-direction: column;
+ }
+
+ h1 {
+    color: var(--primary-color);
+ }
+ .about h2,
+ .photo h2,
+ .courses h2 {
+    background-color: var(--accent2-color);
+    color: #000;
+    padding: 5px;
+    text-align: center;
+
+ }
+.about p {
+    background-color: var(--accent3-color);
+    color: #000;
+    padding: 5px;
+}
+
+.photo img {
+    width: 100%;
+    display: block;
+}
+
+.filters {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+}
+
+.filters button {
+    padding: 6px 16px;
+    border: 2px solid var(--accent2-color);
+    background-color: var(--secondary-color);
+    color: #fff;
+    border-radius: 6px;
+    cursor: pointer;
+    margin-bottom: 5px;
+    margin-top: 5px;
+
+}
+.courses ul {
+    display: flex;
+    flex-direction: column;
+}
+.courses ul li {
+    background-color: var(--secondary-color);
+    color: #fff;
+    padding: 8px;
+    margin: 5px;
+    margin-bottom: 6px;
+    
+    text-align: center;
+    border-radius: 4px;
+}
+
+.credits {
+    margin: 8px;
+    text-align: center;
+    font-size: 14px;
+}
+
+#course-card {
+    display: grid;
+    gap: 10px;
+    margin: 15px;
+}
+
+.completed {
+    background-color: var(--primary-color);
+    color: #fff;
+    border-left: 6px solid var(--accent1-color);
+
+}
+
+#credit-total {
+    text-align: center;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+footer {
+    text-align: center;
+    background-color: var(--accent1-color);
+    color: #000;
+    padding: 10px;
+    margin-top: 20px;
+    font-size: 14px;
+}
+
+
+

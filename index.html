@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital@0;1&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/large.css">
+    <script src="scripts/menu.js" defer></script>
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="wrapper">
+        <header>
+            <img src="images/globe (1).svg" alt="site logo" width="512" height="512">
+            <span>Iyanu Adeleye</span>
+            <button id="ham-btn" class="hamburger"></button>
+        </header>
+        <nav>
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="chamber.html">Chamber</a></li>
+                <li><a href="final.html">Final</a></li>
+            </ul>
+        </nav>
+        <main>
+            <h1>Home</h1>
+            <div class="bio-data">
+                <section class="about">
+                    <h2>About Me</h2>
+                    <p>My name is Iyanu Emmanuel Adeleye. I was born in Igbemo-Ekiti in Ekiti State, Nigeria. I love to
+                        spend time with family and friends. I enjoy watching football matches and discussing issues of
+                        national interest and development. I love God. I have a philosophical belief that fulfillment in
+                        life means how you are able to positively impact the lives of others, no matter who they are,
+                        and
+                        contribute your quota to leaving the world a better place than you met it.</p>
+                </section>
+                <section class="photo">
+                    <h2>Student Photo</h2>
+                    <img src="images/my_pics.jpg" alt="Student picture">
+                </section>
+            </div>
+            <section class="courses">
+                <h2>Web Certificate Courses</h2>
+                <div class="filters">
+                    <button id="all">All</button>
+                    <button id="cse">CSE</button>
+                    <button id="wdd">WDD</button>
+                </div>
+                <div id="course-cards"></div>
+                <ul>
+                    <li>WDD 130</li>
+                    <li>WDD 131</li>
+                    <li>WDD 231</li>
+                </ul>
+                <p id="credit-total">
+                    The total credits for courses above is 6
+                </p>
+            </section>
+
+        </main>
+        <footer>
+            <p>©<span id="currentyear"></span> Iyanu Adeleye</p>
+            <p><span id="lastmodified"></span></p>
+        </footer>
+    </div>
+</body>
+
+</html>
