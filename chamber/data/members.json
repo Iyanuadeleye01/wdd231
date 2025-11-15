@@ -1,0 +1,65 @@
+[
+  {
+    "name": "Sunrise Foods Ltd",
+    "address": "12 Market Road, Akure, Ondo State",
+    "phone": "+234 803 111 2222",
+    "website": "https://sunrisefoods.ng",
+    "image": "sunrise.png",
+    "membership": 3,
+    "description": "Major distributor of agricultural food products."
+  },
+  {
+    "name": "Akure Tech Hub",
+    "address": "45 Ilesha Garage, Akure",
+    "phone": "+234 807 555 8899",
+    "website": "https://akuretechhub.com",
+    "image": "techhub.png",
+    "membership": 2,
+    "description": "Technology and innovation workspace."
+  },
+  {
+    "name": "GreenLife Pharmacy",
+    "address": "Oda Road, Akure",
+    "phone": "+234 902 334 5566",
+    "website": "https://greenlifepharm.ng",
+    "image": "pharmacy.png",
+    "membership": 1,
+    "description": "Retail and community pharmacy."
+  },
+  {
+    "name": "Peak Builders & Co",
+    "address": "Alagbaka, Akure",
+    "phone": "+234 809 444 7788",
+    "website": "https://peakbuilders.com",
+    "image": "builders.png",
+    "membership": 3,
+    "description": "Construction and real estate development."
+  },
+  {
+    "name": "BlueWave Printing",
+    "address": "Oba Adesida Road, Akure",
+    "phone": "+234 701 222 3333",
+    "website": "https://bluewaveprints.com",
+    "image": "printing.png",
+    "membership": 1,
+    "description": "Digital and large-scale printing services."
+  },
+  {
+    "name": "Royal Transport Co",
+    "address": "FUTA North Gate, Akure",
+    "phone": "+234 805 123 9876",
+    "website": "https://royaltransport.ng",
+    "image": "transport.png",
+    "membership": 2,
+    "description": "Passenger and logistics services."
+  },
+  {
+    "name": "FreshMart Superstore",
+    "address": "Arakale Road, Akure",
+    "phone": "+234 803 678 2222",
+    "website": "https://freshmart.ng",
+    "image": "superstore.png",
+    "membership": 3,
+    "description": "Retail superstore and household goods."
+  }
+]
