@@ -1,0 +1,249 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    background-color: #fff;
+}
+
+.wrapper {
+    max-width: 1100px;
+    margin: 0 auto;
+    overflow-x: hidden;
+
+}
+
+:root {
+    --primary-color: #ADE1E5;
+    --secondary-color: #79C7C5;
+    --accent1-color: #99D19C;
+    --accent2-color: #73AB84;
+    --accent3-color: #000501;
+
+}
+
+/*************Header*************/
+
+.header-logo {
+    display: grid;
+    grid-template-columns: 24px auto 44px;
+    background-color: var(--primary-color);
+    color: var(--accent3-color);
+    column-gap: 8px;
+    align-items: end;
+    padding: 5px 5px 5px 10px;
+    border-bottom: 1px solid var(--accent1-color);
+
+}
+
+.header-logo img {
+    display: block;
+    width: 100%;
+    height: auto;
+} 
+
+
+.header-logo span {
+    font-size: 1.2rem;
+    color: var(--accent3-color);
+}
+
+/**********Hamburg Navigation**********/
+.hamburg {
+    background-color: none;
+    border: none;
+    color: var(--accent2-color);
+}
+
+.hamburg::after {
+    content: "\2630";
+}
+
+/***********Navigation*********/
+nav {
+    display: none;
+}
+
+nav.show {
+    display: block;
+}
+
+nav ul {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    text-align: center;
+}
+
+ul a {
+    text-decoration: none;
+    color: var(--accent1-color);
+}
+
+li a:hover {
+    color: var(--secondary-color);
+}
+
+li {
+    list-style: none;
+}
+
+/****Wrapper*****/
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+a {
+    text-decoration: none;
+}
+
+/****Hero Section*****/
+.hero {
+    margin: 0 auto;
+    position: relative;
+    margin-bottom: 0;
+}
+ .hero img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+ }
+
+ .hero .cta {
+    position: absolute;
+    bottom: 5px;
+    right: 5px;
+    background-color: var(--primary-color);
+    color: var(--accent3-color);
+    padding: 0.1rem;
+    border-radius: 0.5rem;
+ }
+
+ .cta-btn {
+    display: inline-block;
+    margin-top: 0.2rem;
+    padding: 0.1rem 0.3rem;
+    background-color: var(--accent1-color);
+    color: #fff;
+    font-weight: bold;
+    border-radius: 0.5rem;
+ }
+.info-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 1rem;
+    background-color: var(--primary-color);
+    color: var(--accent3-color);
+    
+}
+
+.weather-card figure {
+    margin-top: 0.5rem;
+    text-align: center;
+}
+
+.weather-card img {
+    width: 4rem;
+    margin: auto;
+}
+
+/******Spotlight Section*****/
+
+.spotlights {
+    padding: 1rem;
+    margin: 0 auto;
+    background-color: var(--primary-color);
+    color: var(--accent3-color);
+
+}
+.spotlights h2 {
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+#spotlights-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+
+}
+
+.spotlight-card {
+    background-color: var(--accent1-color);
+    color: var(--accent3-color);
+    padding: 1rem;
+    text-align: center;
+
+}
+
+.spotlight-card img {
+    width: 100%;
+    max-width: 140px;
+    height: auto;
+    display: block;
+}
+
+/*******Footer********/
+footer {
+    background-color: var(--secondary-color);
+    color: var(--accent3-color);           
+    padding: 2rem 1rem;
+    display: grid;
+    grid-template-columns: 1fr auto 1fr; 
+    gap: 2rem;
+    font-size: 0.9rem;
+    margin-top: 0;
+}
+
+
+footer .location {
+    line-height: 1.4;
+}
+
+footer .logos {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+footer .logos img {
+    width: 40px;
+    height: 40px;
+    padding: 10px;
+    background: white;
+    border-radius: 50%;
+    display: block;
+}
+
+footer .source {
+    text-align: right;
+    line-height: 1.4;
+}
+
+/* mobile view */
+@media (max-width: 600px) {
+    footer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 1.5rem;
+    }
+
+    footer .source {
+        text-align: center;
+    }
+
+    footer .location {
+        text-align: center;
+    }
+}
+
+

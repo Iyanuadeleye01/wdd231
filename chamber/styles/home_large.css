@@ -1,0 +1,32 @@
+@media (min-width:723px){
+    .hamburg {
+        display: none;
+    }
+
+    nav {
+        display: block;
+    }
+
+    nav ul {
+        flex-direction: row;
+        justify-content: flex-end;
+    }
+    
+    #spotlight-container {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    footer {
+        flex-direction: row;     
+        justify-content: space-between;
+        align-items: flex-start;
+        text-align: left;
+        max-width: 1100px;
+        margin: 0 auto;
+        padding: 2rem 1rem;
+    }
+
+    footer .logos {
+        justify-content: flex-start;
+    }
+}
