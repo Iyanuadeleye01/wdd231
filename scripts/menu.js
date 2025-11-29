@@ -106,6 +106,11 @@ function displayCourses(list){
                         <p>${course.title}</p>
                         <p>Credits: ${course.credits}</p>`;
 
+                        // Add CourseDiv
+                         card.addEventListener("click", () => {
+                        displayCourseDetails(course);
+        });
+
         container.appendChild(card);
     });
 
@@ -135,3 +140,32 @@ document.querySelector("#wdd").addEventListener("click", () =>{
 // To dynamically display time
 document.getElementById("currentyear").textContent = new Date().getFullYear();
 document.getElementById("lastmodified").textContent = "Lastmodified: " + document.lastModified;
+
+// Dialog
+const courseDetails = document.querySelector("#course-details");
+
+function displayCourseDetails(course){
+    courseDetails.innerHTML = "";
+    courseDetails.innerHTML = `
+    <button id="closeModal">X</button>
+    <h2>${course.subject} ${course.number}</h2>
+    <h3>${course.title}</h3>
+    <p><strong>Credits</strong>: ${course.credits}</p>
+    <p><strong>Certificate</strong>: ${course.certificate}</p>
+    <p>${course.description}</p>
+    <p><strong>Technologies</strong>: ${course.technology.join(',')}</p>`;
+    // Open dialog 
+    courseDetails.showModal();
+
+    
+    // Select the close button after it exists in the DOM
+    const closeModal = document.querySelector("#closeModal");
+
+    // Add the close functionality
+    closeModal.addEventListener("click", () => {
+        courseDetails.close();
+    });
+
+};
+
+

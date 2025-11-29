@@ -34,7 +34,7 @@ body {
 .header-logo {
     display: grid;
     grid-template-columns: 24px auto 44px;
-    background-color: var(--primary-color);
+    background-color: var(--secondary-color);
     color: var(--accent3-color);
     column-gap: 8px;
     align-items: end;

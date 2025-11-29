@@ -1,0 +1,32 @@
+@media (min-width: 725px){
+
+    .hamburg {
+        display: none;
+    }
+
+    nav {
+        display: block;
+    }
+
+    nav ul {
+        flex-direction: row;
+        justify-content: flex-end;
+    }
+
+    .join-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 2rem;
+        align-items: start;
+    }
+
+    #goldCard {
+        border-bottom-left-radius: 0.8rem;
+        border-bottom-right-radius: 0.8rem ;
+    }
+
+    .submit-btn {
+        margin-bottom: 1rem;
+    }
+}
+    

@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Iyanu Adeleye">
+    <meta name="description" content="Chamber of Commerce Homepage - Connecting businesses and promoting commerce in Akure.
+">
+    <meta property="og:title" content="Chamber of commerce in Akure, Ondo State, Nigeria">
+    <meta property="og:description"
+        content="The Akure Chamber of Commerce supports local businesses through networking, advocacy, and growth opportunities. We connect entrepreneurs with resources, events, and community partnerships. Join us to strengthen commerce and drive economic development in Akure.">
+    <meta property="og:locale" content="en_UK">
+    <meta property="og:image" content="">
+    <meta property="og:url" content="">
+    <title>Chamber of Commerce Website</title>
+    <link rel="icon" href="favicon.ico">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/join_small.css">
+    <link rel="stylesheet" href="styles/join_large.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital@0;1&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="wrapper">
+        <header>
+            <div class="header-logo">
+                <img src="images/marketplace-alt.svg" alt="chamber logo" width="20" height="20">
+                <span> Akure Chamber of Commerce</span>
+                <button id="hamb-btn" class="hamburg"></button>
+            </div>
+        </header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="directory.html">Directory</a></li>
+                <li><a href="join.html">Join</a></li>
+                <li><a href="discover.html">Discover</a></li>
+            </ul>
+        </nav>
+        <main>
+            <div class="join-container">
+                <form method="get" action="thankyou.html" class="join-form">
+                    <label>First Name
+                        <input type="text" name="firstName" required title="Enter Your First Name"
+                            autocomplete="given-name">
+                    </label>
+
+                    <label>Last Name
+                        <input type="text" name="lastName" required title="Enter Your Lat Name "
+                            autocomplete="family-name">
+                    </label>
+
+                    <label>Organization Title
+                        <input type="text" name="orgTitle"
+                            title="Your organization title(letters, hyphen, spaces only, min 7 chars)"
+                            autocomplete="organization-title" pattern="[A-Za-z-\s]{7,}">
+                    </label>
+
+                    <label>Email Address
+                        <input type="text" name="email" required title="Enter a valid email address"
+                            autocomplete="email" placeholder="examole@gmail.com">
+                    </label>
+
+                    <label>Mobile Phone Number
+                        <input type="tel" name="phone" required title="Enter your mobile number" autocomplete="tel">
+                    </label>
+
+                    <label>Business name
+                        <input type="text" name="organization" required title="Enter your organization name"
+                            autocomplete="organization">
+                    </label>
+
+                    <label>Membership Level
+                        <select name="membership" required title="Select your membership level">
+                            <option value="">--Select Membership</option>
+                            <option value="np">NP Membership (Non-profit)</option>
+                            <option value="bronze">Bronze Membership</option>
+                            <option value="silver">Silver Membership</option>
+                            <option value="gold">Gold Membership</option>
+                        </select>
+                    </label>
+
+                    <label>Business
+                        <textarea name="description" title="Describe your business"></textarea>
+                    </label>
+
+                    <input type="hidden" name="timestamp" id="timestamp">
+
+                    <input type="submit" value="Submit Application" class="submit-btn">
+
+                </form>
+
+                <section class="membership-cards">
+                    <div class="card" id="npCard">
+                        <h3>NP Membership</h3>
+                        <button data-dialog="npDialog">View Benefits</button>
+                    </div>
+
+                    <div class="card" id="bronzeCard">
+                        <h3>Bronze Membership</h3>
+                        <button data-dialog="bronzeDialog">View Benefits</button>
+                    </div>
+
+                    <div class="card" id="silverCard">
+                        <h3>Silver Membership</h3>
+                        <button data-dialog="silverDialog">View Benefits</button>
+                    </div>
+
+                    <div class="card" id="goldCard">
+                        <h3>Gold Membership</h3>
+                        <button data-dialog="goldDialog">View Benefits</button>
+                    </div>
+
+                </section>
+            </div>
+
+            <dialog id="npDialog">
+                <h3>NP Membership Benefits</h3>
+                <ul>
+                    <li>No membership fee</li>
+                    <li>Access to community events</li>
+                    <li>Networking with local organization</li>
+                    <li>Basic advertising options</li>
+                </ul>
+                <button class="close-dialog">Close</button>
+            </dialog>
+
+            <dialog id="bronzeDialog">
+                <h3>Bronze Membership Benefits</h3>
+                <ul>
+                    <li>Event discounts</li>
+                    <li>Monthly promotions</li>
+                    <li>Business directory listing</li>
+                </ul>
+                <button class="close-dialog">Close</button>
+            </dialog>
+
+            <dialog id="silverDialog">
+                <h3>Silver Membership Benefits</h3>
+                <ul>
+                    <li>All Bronze benefits</li>
+                    <li>Spotlight advertising</li>
+                    <li>Training workshops</li>
+                    <li>Social media promotions</li>
+                </ul>
+                <button class="close-dialog">Close</button>
+            </dialog>
+
+            <dialog id="goldDialog">
+                <h3>Gold Membership</h3>
+                <ul>
+                    <li>All Silver benefits</li>
+                    <li>Premium advertising placement</li>
+                    <li>Exclusive event invitations</li>
+                    <li>VIP Support</li>
+                </ul>
+                <button class="close-dialog">Close</button>
+            </dialog>
+        </main>
+        <footer>
+            <div class="location">
+                <strong>Akure Chamber of Commerce</strong><br>
+                10 Alagbaka, Akure<br />
+                Ondo-State, Nigeria<br>
+                <a href="mailto:surpriserespect7@gmail.com">surpriserespect7@gmail.com</a><br>
+                +2349059597376
+            </div>
+            <div class="logos">
+                <a href="https://facebook.com" target="_blank">
+                    <img src="images/facebook.svg" alt="Facebook" width="20" height="20">
+                </a>
+
+                <a href="https://x.com" target="_blank">
+                    <img src="images/twitter.svg" alt="X" width="20" height="20">
+                </a>
+            </div>
+            <div class="source">
+                WDD231 Class Project<br>
+                Iyanu Adeleye<br>
+                © 2025 Akure Chamber of Commerce<br>
+                <p><span id="lastmodified"></span></p><br>
+            </div>
+
+        </footer>
+    </div>
+    <script src="scripts/join.js" defer></script>
+</body>
+
+</html>
