@@ -1,0 +1,61 @@
+@media only screen and (min-width: 768px) {
+
+    /****Navigation****/
+    .hamburger {
+        display: none;
+    }
+
+    nav {
+        display: block;
+    }
+
+    nav ul {
+        flex-direction: row;
+        justify-content: flex-end;
+    }
+
+    /* DESKTOP GRID */
+
+    .card-grid {
+        grid-template-columns: repeat(3, 1fr);
+        padding: 2rem 5%;
+        gap: 2rem;
+    }
+
+    main h1 {
+        font-size: 2.4rem;
+    }
+
+    main p {
+        font-size: 1.1rem;
+        max-width: 600px;
+        margin: 0 auto 2rem;
+    }
+
+
+/* LARGE DESKTOP BEAUTIFICATION */
+@media (min-width: 1100px) {
+    .card-grid {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    footer {
+        display: flex;
+        justify-content: space-between;
+        text-align: left;
+        padding: 2.5rem 10%;
+    }
+
+    .location, .logos, .source {
+        flex: 1;
+    }
+
+    .logos {
+        text-align: center;
+    }
+
+    .source {
+        text-align: right;
+    }
+}
+}

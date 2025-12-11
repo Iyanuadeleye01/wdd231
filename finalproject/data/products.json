@@ -1,0 +1,22 @@
+[
+  {"id":1,"name":"Akure A-line Dress","category":"Dresses","price":12000,"color":"Blue Ankara","size":"M","description":"Lightweight A-line dress with Ankara yoke.","image":"images/item1.jpg"},
+  {"id":2,"name":"Sunset Wrapper","category":"Traditional","price":8000,"color":"Orange","size":"L","description":"Wrapper with stitched waist and pocket.","image":"images/item2.jpg"},
+  {"id":3,"name":"Tailored Blazer","category":"Suiting","price":15000,"color":"Black","size":"M","description":"Unlined blazer for evening wear.","image":"images/item3.jpg"},
+  {"id":4,"name":"Cowl Neck Dress","category":"Dresses","price":11000,"color":"Emerald","size":"S","description":"Midi cowl neck dress for events.","image":"images/item4.jpg"},
+  {"id":5,"name":"Embroidered Tunic","category":"Casual","price":7000,"color":"White","size":"M","description":"Comfort tunic with hand embroidery.","image":"images/item5.jpg"},
+  {"id":6,"name":"Peplum Top","category":"Casual","price":6500,"color":"Pink","size":"S","description":"Peplum top with Ankara trim.","image":"images/item6.jpg"},
+  {"id":7,"name":"Classic Shirt","category":"Menswear","price":6000,"color":"Striped","size":"L","description":"Tailored shirt for smart casual looks.","image":"images/item7.jpg"},
+  {"id":8,"name":"High-waist Trousers","category":"Casual","price":9000,"color":"Beige","size":"M","description":"Comfort-fit high waisted trousers.","image":"images/item8.jpg"},
+  {"id":9,"name":"Lace Evening Gown","category":"Formal","price":32000,"color":"Ivory","size":"S","description":"Floor-length gown with lace overlay.","image":"images/item9.jpg"},
+  {"id":10,"name":"Kids Ankara Set","category":"Kids","price":4500,"color":"Multi","size":"XS","description":"Matching top and shorts for kids.","image":"images/item10.jpg"},
+  {"id":11,"name":"Wrap Skirt","category":"Skirts","price":5000,"color":"Green Ankara","size":"M","description":"Wrap skirt with side tie.","image":"images/item11.jpg"},
+  {"id":12,"name":"Bomber Jacket","category":"Outerwear","price":14000,"color":"Navy","size":"L","description":"Lightweight bomber with pockets.","image":"images/item12.jpg"},
+  {"id":13,"name":"Shift Dress","category":"Dresses","price":9500,"color":"Mustard","size":"M","description":"Work-appropriate shift dress.","image":"images/item13.jpg"},
+  {"id":14,"name":"Ruffled Blouse","category":"Tops","price":5200,"color":"Cream","size":"S","description":"Ruffled front blouse for styling.","image":"images/item14.jpg"},
+  {"id":15,"name":"Tailored Shorts","category":"Casual","price":4800,"color":"Khaki","size":"M","description":"Smart tailored shorts.","image":"images/item15.jpg"},
+  {"id":16,"name":"Boho Maxi","category":"Dresses","price":12500,"color":"Floral","size":"L","description":"Flowy boho maxi dress.","image":"images/item16.jpg"},
+  {"id":17,"name":"Statement Coat","category":"Outerwear","price":28000,"color":"Maroon","size":"L","description":"Long coat with wide lapel.","image":"images/item17.jpg"},
+  {"id":18,"name":"Denim Jumpsuit","category":"Casual","price":14500,"color":"Denim Blue","size":"M","description":"Utility-inspired jumpsuit.","image":"images/item18.jpg"},
+  {"id":19,"name":"Fitted Pencil Skirt","category":"Skirts","price":6300,"color":"Black","size":"S","description":"Classic pencil skirt for office wear.","image":"images/item19.jpg"},
+  {"id":20,"name":"Evening Cape","category":"Formal","price":23000,"color":"Gold","size":"One Size","description":"Dramatic cape detail for events.","image":"images/item20.jpg"}
+]

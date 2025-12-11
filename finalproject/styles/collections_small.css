@@ -1,0 +1,260 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    background-color: #fff;
+}
+
+:root {
+    --primary-color: #FFE3E0;
+    --secondary-color: #FBC3BC;
+    --accent1-color: #F7A399;
+    --accent2-color: #F38375;
+    --accent3-color: #EF6351;
+}
+/*******Logo styling******/
+.header-items {
+    display: grid;
+    grid-template-columns: 24px auto 44px;
+    background-color: var(--secondary-color);
+    color: #000;
+    column-gap: 8px;
+    align-items: end;
+    padding: 5px 5px 5px 10px;
+    border-bottom: 1px solid var(--accent1-color);
+
+}
+
+.header-items img {
+    display: block;
+    width: 100%;
+    height: auto;
+} 
+
+
+.header-items span {
+    font-size: 1.2rem;
+    color: #000;
+}
+
+/********Hamburger******/
+.hamburger {
+    background-color: none;
+    border: none;
+    color: #000;
+}
+
+.hamburger::after {
+    content: "\2630";
+}
+
+/***********Navigation*********/
+nav {
+    display: none;
+}
+
+nav.show {
+    display: block;
+}
+
+nav ul {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    text-align: center;
+}
+
+ul a {
+    text-decoration: none;
+    color: #000;
+}
+
+li a:hover {
+    color: var(--secondary-color);
+}
+
+li {
+    list-style: none;
+}
+
+/* PAGE TITLE */
+main h1 {
+    text-align: center;
+    margin: 1.5rem 0 0.5rem;
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+
+main p {
+    text-align: center;
+    color: #555;
+    margin-bottom: 1.5rem;
+}
+
+/* COLLECTION GRID */
+.card-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+    padding: 1rem;
+    
+}
+
+.card-grid article {
+    background: #fff;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.06);
+    transition: transform .2s ease;
+    background-color: var(--accent1-color);
+    color: #000;
+}
+
+.card-grid article:hover {
+    transform: translateY(-4px);
+}
+
+.card-grid img {
+    width: 100%;
+    height: auto;
+}
+
+.card-grid h3 {
+    padding: .8rem 1rem 0;
+    font-size: 1.2rem;
+}
+
+.card-grid p {
+    padding: 0 1rem 1rem;
+    font-size: .95rem;
+    color: #666;
+}
+
+/* DIALOG POPUP */
+dialog {
+    width: 30%;
+    border: none;
+    padding: 0;
+    background-color: var(--primary-color);
+    color: #000;
+    border-radius: 10px;
+    box-shadow: 0 0 25px rgba(0,0,0,0.2);
+}
+
+#closeDialog {
+    border: none;
+    background: none;
+    font-size: 2rem;
+    float: right;
+    cursor: pointer;
+    padding: .5rem;
+}
+
+#dialogDetails {
+    padding: 1.2rem;
+}
+
+::backdrop {
+    background-color: var(--secondary-color);
+    opacity: 0.4;
+}
+
+
+
+
+
+
+
+
+
+
+/*******Footer********/
+footer {
+    background-color: var(--secondary-color);
+    color: #000;           
+    padding: 2rem 1rem;
+    display: grid;
+    grid-template-columns: 1fr auto 1fr; 
+    gap: 2rem;
+    font-size: 0.9rem;
+    margin-top: 1rem;
+}
+
+
+footer .location {
+    line-height: 1.4;
+}
+
+footer .logos {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+footer .logos img {
+    width: 40px;
+    height: 40px;
+    padding: 10px;
+    background: white;
+    border-radius: 50%;
+    display: block;
+}
+
+footer .source {
+    text-align: right;
+    line-height: 1.4;
+}
+
+/*******mobile view*******/
+@media only screen and (max-width: 600px){
+    .header-items {
+        grid-template-columns: 40px 1fr 40px; 
+    }
+
+    .header-items span {
+        font-size: 0.9rem; 
+    }
+
+    .hamburger {
+        font-size: 1.8rem; 
+    } 
+
+
+    footer {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+
+        gap: 1.5rem;
+        padding: 1.5rem 1rem;
+
+        width: 100%;
+        max-width: 100%;
+        overflow-x: hidden;
+    }
+
+    footer .location,
+    footer .source {
+        text-align: center;
+    }
+
+    footer .logos {
+        justify-content: center;
+    }
+
+    footer .logos img {
+        width: 30px;
+        height: 30px;
+        padding: 8px; 
+    }
+}
+
+
+    
